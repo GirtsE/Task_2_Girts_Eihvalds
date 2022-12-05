@@ -1,0 +1,19 @@
+{
+  "name": "task_2_girts_eihvalds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GirtsE/Task_2_Girts_Eihvalds.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GirtsE/Task_2_Girts_Eihvalds/issues"
+  },
+  "homepage": "https://github.com/GirtsE/Task_2_Girts_Eihvalds#readme"
+}
