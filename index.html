@@ -10,31 +10,36 @@
 <body>
     <nav id="main_nav">
             <img src="assets/img/BlackLogo.jpg" alt="BlackLogo" class="logo">
-            <span class="links">
+            <span class="links FontSize18Montserrat">
                 <a href="#">Ideja</a>
                 <a href="#">Piesaki Sapni</a>
                 <a href="#">Uzņēmējiem</a>
                 <a href="#">Sapņu banka</a>
                 <a href="#">Sapņus atbalsta</a>
                 <a href="#">99 Iedvesmas stāsti</a>
-                <a href="#">LV</a>
+                <select class="Lang FontSize18Montserrat">
+                    <option value="LV">LV</option>
+                    <option value="ENG">ENG</option>
+                    <option value="RU">RU</option>
+                  </select>
             </span>
+            <img src="assets/img/Ripped2.png" alt="ripped" class="Transition_ripped">
     </nav>
-    <img src="assets/img/Ripped2.png" alt="ripped" class="Transition_ripped Tvideo">
     <div id="video">
         <video poster="assets/img/SparkleVideo.png" alt="video" class="video"></video>
         <img src="assets/img/PlayButton.svg" alt="playbutton" class="video-control">
     </div>
     <div id="MainText">
-        <p class="text">
+        <p class="text FontSize18Montserrat">
             SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus.
              Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, 
              lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. 
              Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
         </p>
     </div>
-    <div id="grid_container">
-        <img src="/assets/img/Ripped2.png" alt="Ripped" class="Transition_ripped Tgrid">
+
+    <div id="PhotoGrid_container">
+        <img src="/assets/img/Ripped2.png" alt="Ripped" class="Transition_ripped_top">
         <div id="PhotoGrid">
             <img src="assets/img/Zanda_1.jpg" alt="IMG1" class="item1">
             <img src="assets/img/Sibilla_4.jpg" alt="IMG2" class="item2">
@@ -42,10 +47,81 @@
             <img src="assets/img/Brinuma_meita-15.jpg" alt="IMG4" class="item4">
             <img src="assets/img/Anda_2.jpg" alt="IMG5" class="item3">
         </div>
-        <img src="/assets/img/Ripped3.png" alt="Ripped" class="Transition_ripped Tgrid">
+        <img src="/assets/img/Ripped3.png" alt="Ripped" class="Transition_ripped_bottom"></img>
     </div>
     
+    <div id="Signup_choice">
+        <span class="choice FontSize24Oswald">
+            <h3>VĒLIES PIEPILDĪT SAVU SAPNI?</h3>
+            <button class="Button FontSize18Montserrat">Sapņotājiem</button>
+        </span>
+        <span class="choice FontSize24Oswald">
+            <h3>VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?</h3>
+            <button class="Button FontSize18Montserrat">Uzņēmējiem</button>
+        </span>
+    </div>
 
+    <div id="formWrapper">
+        <h3 class="FontSize30Oswald ">SAZINĀTIES AR MUMS</h3>
+        <form>
+            <span class="NameAndEmail">
+                <input class="name FontSize18Montserrat" type="text" placeholder="Vārds, Uzvārds*">
+                <input class="email FontSize18Montserrat" type="email" placeholder="E-pasts">
+            </span>
+            <input class="phone FontSize18Montserrat" type="text" placeholder="Telefons*">
+            <textarea class="textarea FontSize18Montserrat" type="textarea" placeholder="Jautājums, vai komentārs*"></textarea>
+            <label class="FontSize14Montserrat">* obligāti aizpildāmie lauki</label>
+            <span class="tos FontSize14Montserrat">
+                <input type="checkbox">
+                <label>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label>
+            </span>
+            <input class="submit FontSize24Montserrat" type="submit" value="Sūtīt">
+        </form>
+    </div>
+    <div id="Supporters">
+        <h4 class="FontSize24Oswald">ATBALSTĪTĀJI</h4>
+        <div class="SupportersLogo">
+            <img class="logo" src="/assets/img/TEIKUMS.png" alt="">
+            <img class="logo" src="/assets/img/SEM.png" alt="">
+            <img class="logo" src="/assets/img/Citybee.png" alt="">
+            <img class="logo" src="/assets/img/Linearis.png" alt="">
+        </div>
+    </div>
+    <footer>
+        <div id="Footer">
+            <div class="LogoAndCopyright">
+                <img src="/assets/img/GoldenLogo.png" alt="">
+            </div>
+            <div class="TopNav">
+                <ul>
+                    <li><a class="FontSize18Montserrat" href="#">Ideja</a></li>
+                    <li><a class="FontSize18Montserrat" href="#">Piesaki Sapni</a></li>
+                    <li><a class="FontSize18Montserrat" href="#">Uzņēmējiem</a></li>
+                    <li><a class="FontSize18Montserrat" href="#">Sapņu banka</a></li>
+                    <li><a class="FontSize18Montserrat" href="#">Sapņus atbalsta</a></li>
+                    <li><a class="FontSize18Montserrat" href="#">99 Iedvesmas stāsti</a></li>
+                </ul>
+            </div>
+            <div class="Info">
+                <h5 class="FontSize24Montserrat">Biedrība SparkleHeart</h5>
+                <p class="FontSize18Montserrat">Reģistrācijas nr. 40008293119</p>
+                <p class="FontSize18Montserrat">Banka: SWEDBANK A/S</p>
+                <p class="FontSize18Montserrat">LV52HABA0551047652465</p>
+            </div>
+            <div class="Contacts">
+                <h5 class=".FontSize24Montserrat">Juris Gogulis</h5>
+                <p class="FontSize18Montserrat">juris.gogulis@sparkleheart.org</p>
+                <p class="FontSize18Montserrat">+37126890034</p>
+                <p class="FontSize18Montserrat">Biķernieku iela 24a - 5, LV-1006</p>
+                <a href="https://www.facebook.com/"><img src="/assets/img/FaceBooklogo.svg" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="/assets/img/InstagramLogo.svg" alt=""></a>
+            </div>            
+        </div>
+        <span>
+            <div class="FontSize14Montserrat">© SparkleHeart 2020.<br> Visas tiesības aizsargātas.</div>
+            <div class="FontSize14Montserrat"><small>Privātuma politika</small></div>
+        </span>
+    </footer>
     
 </body>
 </html>
