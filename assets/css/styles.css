@@ -370,7 +370,7 @@ footer {
 }
 footer #Supporters {
   position: relative;
-  height: clamp(300px, 30vw, 600px);
+  height: clamp(450px, 30vw, 800px);
 }
 footer #Supporters .background {
   position: absolute;
@@ -397,6 +397,17 @@ footer #Supporters .SupportersLogosAndText .Logos {
 footer #Supporters .SupportersLogosAndText .Logos .logo {
   height: clamp(50px, 5vw, 100px);
   align-self: center;
+}
+@media screen and (max-width: 850px) {
+  footer #Supporters .SupportersLogosAndText .Logos {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  footer #Supporters .SupportersLogosAndText .Logos .logo {
+    text-align: center;
+    margin: 0 auto;
+    height: 10vw;
+  }
 }
 footer #Footer {
   display: grid;

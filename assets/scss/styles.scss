@@ -454,7 +454,8 @@ footer {
 
     #Supporters {
         position: relative;
-        height: clamp(300px, 30vw, 600px);
+        height: clamp(450px, 30vw, 800px);
+        
 
         .background {
             position: absolute;
@@ -484,6 +485,18 @@ footer {
                     height: clamp(50px, 5vw, 100px);
                     align-self: center;
                 }
+                @media screen and (max-width: $phone_width) {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    
+                    .logo{
+                        text-align: center;
+                        margin: 0 auto;
+                        height: 10vw;
+                    }
+    
+                }
+                
             }
         }
     }
