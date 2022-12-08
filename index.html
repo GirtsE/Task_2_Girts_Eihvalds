@@ -10,22 +10,23 @@
 <body>
     <nav id="main_nav">
             <img src="assets/img/BlackLogo.jpg" alt="BlackLogo" class="logo">
-            <span class="links FontSize18Montserrat">
-                <a href="#">Ideja</a>
-                <a href="#">Piesaki Sapni</a>
-                <a href="#">Uzņēmējiem</a>
-                <a href="#">Sapņu banka</a>
-                <a href="#">Sapņus atbalsta</a>
-                <a href="#">99 Iedvesmas stāsti</a>
+            <img id="MENU" src="/assets/img/MenuOpen.svg" alt="MenuIcon" onclick="MobileMenu()"/>
+            <span id="links" class="FontSize18Montserrat">
+                <a class="link" href="#">Ideja</a>
+                <a class="link"href="#">Piesaki Sapni</a>
+                <a class="link" href="#">Uzņēmējiem</a>
+                <a class="link" href="#">Sapņu banka</a>
+                <a class="link" href="#">Sapņus atbalsta</a>
+                <a class="link" href="#">99 Iedvesmas stāsti</a>
                 <select class="Lang FontSize18Montserrat">
                     <option value="LV">LV</option>
                     <option value="ENG">ENG</option>
                     <option value="RU">RU</option>
-                  </select>
+                </select>
             </span>
-            <img src="assets/img/Ripped2.png" alt="ripped" class="Transition_ripped">
     </nav>
     <div id="video">
+        <img src="assets/img/Ripped2.png" alt="ripped" class="Transition_ripped">
         <video poster="assets/img/SparkleVideo.png" alt="video" class="video"></video>
         <img src="assets/img/PlayButton.svg" alt="playbutton" class="video-control">
     </div>
@@ -78,21 +79,25 @@
             <input class="submit FontSize24Montserrat" type="submit" value="Sūtīt">
         </form>
     </div>
-    <div id="Supporters">
-        <h4 class="FontSize24Oswald">ATBALSTĪTĀJI</h4>
-        <div class="SupportersLogo">
-            <img class="logo" src="/assets/img/TEIKUMS.png" alt="">
-            <img class="logo" src="/assets/img/SEM.png" alt="">
-            <img class="logo" src="/assets/img/Citybee.png" alt="">
-            <img class="logo" src="/assets/img/Linearis.png" alt="">
-        </div>
-    </div>
     <footer>
+        <div id="Supporters">
+            <img class="background" src="/assets/img/FooterBackground.png" alt="">
+            <div class="SupportersLogosAndText">
+                <h4 class="FontSize24Oswald">ATBALSTĪTĀJI</h4>
+                <div class="Logos">
+                    <img class="logo" src="/assets/img/TEIKUMS.png" alt="">
+                    <img class="logo" src="/assets/img/SEM.png" alt="">
+                    <img class="logo" src="/assets/img/Citybee.png" alt="">
+                    <img class="logo" src="/assets/img/Linearis.png" alt="">
+                </div>
+            </div>
+        </div>
+
         <div id="Footer">
-            <div class="LogoAndCopyright">
+            <div class="Logo">
                 <img src="/assets/img/GoldenLogo.png" alt="">
             </div>
-            <div class="TopNav">
+            <div class="TopNav removeForTablet">
                 <ul>
                     <li><a class="FontSize18Montserrat" href="#">Ideja</a></li>
                     <li><a class="FontSize18Montserrat" href="#">Piesaki Sapni</a></li>
@@ -102,7 +107,7 @@
                     <li><a class="FontSize18Montserrat" href="#">99 Iedvesmas stāsti</a></li>
                 </ul>
             </div>
-            <div class="Info">
+            <div class="Info removeForTablet">
                 <h5 class="FontSize24Montserrat">Biedrība SparkleHeart</h5>
                 <p class="FontSize18Montserrat">Reģistrācijas nr. 40008293119</p>
                 <p class="FontSize18Montserrat">Banka: SWEDBANK A/S</p>
@@ -122,6 +127,6 @@
             <div class="FontSize14Montserrat"><small>Privātuma politika</small></div>
         </span>
     </footer>
-    
+    <script src="/assets/js/theme.js"></script>
 </body>
 </html>
