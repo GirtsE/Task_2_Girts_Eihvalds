@@ -412,7 +412,6 @@ footer #Supporters .SupportersLogosAndText .Logos .logo {
 footer #Footer {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  padding-top: 50px;
   gap: 0px;
   height: 100%;
   margin: 50px 5% 0;
@@ -479,6 +478,58 @@ footer #Footer .Contacts img {
   display: inline;
   margin: 33px 0px 29px 33px;
 }
+@media screen and (max-width: 1200px) {
+  footer #Footer {
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    gap: 0px;
+    height: 100%;
+  }
+  footer #Footer .Logo {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+  }
+  footer #Footer .Logo img {
+    margin: 0;
+  }
+  footer #Footer .Contacts {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+  }
+  footer #Footer .Contacts h5 {
+    margin: 50px 0 50px;
+  }
+  footer #Footer .Contacts img {
+    display: inline;
+    margin: 0 15px 0 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  footer #Footer {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    gap: 0px;
+    height: 100%;
+  }
+  footer #Footer .Logo {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+  }
+  footer #Footer .Contacts {
+    text-align: start;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+  }
+}
 footer span {
   width: 100%;
   padding: 0px 5% 0px;
@@ -487,6 +538,16 @@ footer span {
   align-items: flex-end;
   box-sizing: border-box;
   color: #ffffff;
+}
+@media screen and (max-width: 850px) {
+  footer span {
+    display: block;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 .FontSize18Montserrat {

@@ -504,7 +504,6 @@ footer {
     #Footer {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        padding-top: 50px;
 
         gap: 0px;
         height: 100%;
@@ -592,6 +591,79 @@ footer {
                 margin: 33px 0px 29px 33px;
             }
         }
+        @media screen and (max-width: $tablet_width) {
+                grid-template-rows: auto;
+                grid-template-columns: auto auto;
+                
+                gap: 0px;
+                height: 100%;
+               
+            .Logo {
+                
+             
+                grid-row-start: 1;
+                grid-column-start: 1;
+             
+                grid-row-end: 2;
+                grid-column-end: 2;
+
+                img{
+                    margin: 0;
+                }
+                
+             }
+            .Contacts{
+                grid-row-start: 1;
+                grid-column-start: 2;
+             
+                grid-row-end: 2;
+                grid-column-end: 3;
+
+                h5{
+                    margin: 50px 0 50px;
+                }
+
+                img {
+                    display: inline;
+                    margin: 0 15px 0 0;
+                }
+                
+            }
+        }
+        @media screen and (max-width: $phone_width) {
+                display: grid; 
+             
+                grid-template-rows: auto auto;
+                grid-template-columns: auto;
+                
+                gap: 0px;
+                height: 100%;
+                
+             
+               
+            .Logo {
+             
+                grid-row-start: 1;
+                grid-column-start: 1;
+             
+                grid-row-end: 2;
+                grid-column-end: 2;
+                
+             }
+            .Contacts {
+             
+                text-align: start;
+
+                grid-row-start: 2;
+                grid-column-start: 1;
+             
+                grid-row-end: 3;
+                grid-column-end: 2;
+                
+             }
+            
+        }
+        
     }
 
     span {
@@ -602,6 +674,16 @@ footer {
         align-items: flex-end;
         box-sizing: border-box;
         color: #ffffff;
+        @media screen and (max-width: $phone_width) {
+            display: block;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+        }
+        
     }
 }
 
