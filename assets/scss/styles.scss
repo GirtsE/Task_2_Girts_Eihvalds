@@ -5,7 +5,7 @@ $letter_color: #060606;
 $navbar_letter_color: #060606;
 
 $tablet_width: 1200px;
-$phone_width: 320px;
+$phone_width: 850px;
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
@@ -138,15 +138,14 @@ body {
     text-align: center;
     vertical-align: middle;
     display: table;
-    height: 300px;
-    width: 654px;
+    height: auto;
+    width: clamp(280px , 100% , 654px);
     margin: 0 auto;
-    padding: 0;
 
     .text {
         display: table-cell;
         vertical-align: middle;
-        padding: 0px;
+        padding:80px 0px;
         margin: 0px;
     }
 }
@@ -322,6 +321,9 @@ body {
             color: $primarty_color;
         }
     }
+    @media screen and (max-width: $phone_width) {
+        grid-template-columns: auto;
+    }
 }
 
 #formWrapper {
@@ -344,6 +346,7 @@ body {
                 border-radius: 6px;
                 border: none;
                 background: rgba(196, 196, 196, 0.4);
+                box-sizing: border-box;
             }
 
             .email {
@@ -354,6 +357,18 @@ body {
                 border-radius: 6px;
                 border: none;
                 background: rgba(196, 196, 196, 0.4);
+                box-sizing: border-box;
+            }
+            @media screen and (max-width: $phone_width) {
+                .name{
+                    width: 100%;
+                    margin: 5px 0 ;
+                }
+                .email{
+                    width: 100%;
+                    margin: 5px 0 ;
+                }
+
             }
         }
 
@@ -366,6 +381,12 @@ body {
             border-radius: 6px;
             border: none;
             background: rgba(196, 196, 196, 0.4);
+            box-sizing: border-box;
+            @media screen and (max-width: $phone_width) {
+                    width: 100%;
+                    margin: 5px 0 ;
+
+            }
         }
 
         .textarea {
@@ -377,8 +398,14 @@ body {
             border-radius: 6px;
             border: none;
             background: rgba(196, 196, 196, 0.4);
+            box-sizing: border-box;
 
             resize: none;
+            @media screen and (max-width: $phone_width) {
+                width: 100%;
+                margin: 10px 0 ;
+
+        }
         }
 
         label {
