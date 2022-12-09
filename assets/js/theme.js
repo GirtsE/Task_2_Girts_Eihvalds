@@ -8,12 +8,14 @@ function MobileMenu() {
 			if (links.style.display === "flex") {
 				navbar.style.height ="92.51px"
 				links.style.display = "none";
+				navbar.style.position = "relative"
 				document.body.style.overflow = "scroll";
 				menuIcon.src="assets/img/MenuOpen.svg";
 			  }		
 			else {
 				navbar.style.height = "100vh"
 				links.style.display = "flex";
+				navbar.style.position = "fixed"
 				document.body.style.overflow = "hidden";
 				menuIcon.src="assets/img/MenuX.svg";
 			}
