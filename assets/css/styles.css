@@ -6,7 +6,7 @@ body {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body {
     overflow: scroll !important;
   }
@@ -50,7 +50,7 @@ body {
 #main_nav #MENU {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   #main_nav {
     height: 92.51px !important;
   }
@@ -61,7 +61,7 @@ body {
     display: flex !important;
   }
 }
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   #main_nav .logo {
     position: absolute;
   }
@@ -139,7 +139,7 @@ body {
 #PhotoGrid_container #PhotoGrid {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat();
+  grid-template-columns: auto auto auto auto;
   gap: 0px;
   height: 100%;
 }
@@ -166,6 +166,7 @@ body {
 }
 #PhotoGrid_container #PhotoGrid .item1 {
   margin: auto;
+  width: 100%;
   background-color: #7956EE;
   grid-row-start: 1;
   grid-column-start: 3;
@@ -176,10 +177,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 13vw;
   object-fit: cover;
   width: 100%;
-  margin: auto;
+  height: 13vw;
 }
 #PhotoGrid_container #PhotoGrid .item3 {
   width: 100%;
@@ -196,34 +196,35 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
   }
   #PhotoGrid_container #PhotoGrid .item1 {
     display: flex;
     flex-direction: column;
-    width: 44.3vw;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 45vw;
+    height: auto;
+    margin: 0;
+    box-sizing: border-box;
   }
   #PhotoGrid_container #PhotoGrid .item1 .img1 {
     width: 100%;
-    height: auto;
+    height: 50%;
     margin: 0;
     padding: 0;
-    justify-content: flex-end;
-    object-fit: contain;
+    object-fit: cover;
   }
   #PhotoGrid_container #PhotoGrid .item1 .img2 {
     width: 100%;
-    height: auto;
-    align-self: flex-end;
-    object-fit: contain;
+    height: 50%;
+    align-self: flex-start;
+    object-fit: cover;
   }
   #PhotoGrid_container #PhotoGrid .item3 {
-    object-fit: cover;
-    display: flex;
-    align-items: flex-end;
-    width: 55.7vw;
+    object-fit: fill;
+    height: auto;
+    width: 55vw;
     margin: 0;
   }
   #PhotoGrid_container #PhotoGrid .item2 {
@@ -233,14 +234,14 @@ body {
     align-items: center;
     flex-direction: column;
     width: fit-content;
-    width: 50vw;
+    width: 20vw;
   }
   #PhotoGrid_container #PhotoGrid .item4 {
     display: flex;
     flex: auto;
     flex-direction: column;
     width: max-content;
-    width: 50vw;
+    width: 20vw;
   }
 }
 #PhotoGrid_container .Transition_ripped_top {
@@ -276,7 +277,7 @@ body {
   height: 62px;
   color: #ffffff;
 }
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
   #Signup_choice {
     grid-template-columns: auto;
   }
@@ -312,7 +313,7 @@ body {
   background: rgba(196, 196, 196, 0.4);
   box-sizing: border-box;
 }
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
   #formWrapper form .NameAndEmail .name {
     width: 100%;
     margin: 5px 0;
@@ -332,7 +333,7 @@ body {
   background: rgba(196, 196, 196, 0.4);
   box-sizing: border-box;
 }
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
   #formWrapper form .phone {
     width: 100%;
     margin: 5px 0;
@@ -349,7 +350,7 @@ body {
   box-sizing: border-box;
   resize: none;
 }
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
   #formWrapper form .textarea {
     width: 100%;
     margin: 10px 0;
@@ -421,7 +422,7 @@ footer #Supporters .SupportersLogosAndText .Logos .logo {
   height: clamp(50px, 5vw, 100px);
   align-self: center;
 }
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
   footer #Supporters .SupportersLogosAndText .Logos {
     display: grid;
     grid-template-columns: auto auto;
@@ -501,7 +502,7 @@ footer #Footer .Contacts img {
   display: inline;
   margin: 33px 0px 29px 33px;
 }
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   footer #Footer {
     grid-template-rows: auto;
     grid-template-columns: auto auto;
@@ -531,7 +532,7 @@ footer #Footer .Contacts img {
     margin: 0 15px 0 0;
   }
 }
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
   footer #Footer {
     display: grid;
     grid-template-rows: auto auto;
@@ -562,7 +563,7 @@ footer span {
   box-sizing: border-box;
   color: #ffffff;
 }
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
   footer span {
     display: block;
     font-family: "Montserrat";
@@ -631,6 +632,13 @@ footer span {
   .removeForPhone {
     display: none;
   }
+}
+
+.buttonEffects :hover {
+  background-color: #FFDA16;
+}
+.buttonEffects :hover {
+  background-color: #FF8A00;
 }
 
 /*# sourceMappingURL=styles.css.map */

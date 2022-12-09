@@ -15,7 +15,7 @@ body {
     padding: 0;
     background-color: $primarty_color;
 }
-@media screen and (min-width: $tablet_width) {
+@media(min-width: $tablet_width) {
     body{
         overflow: scroll !important;
     }
@@ -67,7 +67,7 @@ body {
     #MENU {
         display: none;
     }
-    @media screen and (min-width: $tablet_width) {
+    @media(min-width: $tablet_width) {
         height: 92.51px !important ;
         body{
             overflow: scroll !important;
@@ -78,7 +78,7 @@ body {
 
     }
 
-    @media screen and (max-width: $tablet_width) {
+    @media(max-width: $tablet_width) {
         .logo{
             position: absolute;
         }
@@ -167,7 +167,7 @@ body {
         display: grid; 
 
         grid-template-rows: auto;
-        grid-template-columns:repeat();
+        grid-template-columns:auto auto auto auto;
         
         gap: 0px;
         height: 100%;
@@ -206,13 +206,12 @@ body {
            display: flex;
            flex-wrap: wrap;
            flex-direction: column;
-           height: 13vw;
            object-fit:cover;
            width: 100%;
-           margin: auto;
+           height: 13vw;
         }
-
         margin: auto;
+        width: 100%;
 
         background-color: #7956EE; 
         grid-row-start: 1;
@@ -241,36 +240,37 @@ body {
             display: flex;
             flex-wrap:wrap;
             flex-direction: row;
-            width:100%;
+            width:100vw;
             box-sizing: border-box;
             .item1{
                 display: flex;
                 flex-direction: column;
-                width: 44.3vw;
-                justify-content: flex-end;
+                flex-wrap: wrap;
+                width: 45vw;
+                height: auto;
+                margin: 0;
                 
                 .img1{
                     width: 100%;
-                    height: auto;
+                    height: 50%;
                     margin: 0;
                     padding: 0;
-                    justify-content:flex-end;
-                    object-fit: contain;
+                    object-fit: cover;
                 }
                 .img2{
                     width: 100%;
-                    height: auto;
-                    align-self: flex-end;
-                    object-fit: contain;
+                    height: 50%;
+                    align-self: flex-start;
+                    object-fit: cover;
                 }
+                box-sizing: border-box;
             }
             .item3{
-                object-fit: cover;
-                display: flex;
-                align-items: flex-end;
-                
-                width: 55.7vw;
+                object-fit: fill;
+                height: auto;
+                width: 55vw;
                 margin: 0;
+                
             }
             .item2{
                 object-fit: cover;
@@ -279,7 +279,7 @@ body {
                 align-items: center;
                 flex-direction: column;
                 width:fit-content;
-                width: 50vw;
+                width: 20vw;
             
             }
             .item4{
@@ -288,7 +288,7 @@ body {
                 flex-direction: column;
                 width:max-content;
                 
-                width: 50vw;
+                width: 20vw;
 
             }
         }
@@ -332,7 +332,7 @@ body {
             color: $primarty_color;
         }
     }
-    @media screen and (max-width: $phone_width) {
+    @media (max-width: $phone_width) {
         grid-template-columns: auto;
     }
 }
@@ -370,7 +370,7 @@ body {
                 background: rgba(196, 196, 196, 0.4);
                 box-sizing: border-box;
             }
-            @media screen and (max-width: $phone_width) {
+            @media (max-width: $phone_width) {
                 .name{
                     width: 100%;
                     margin: 5px 0 ;
@@ -393,7 +393,7 @@ body {
             border: none;
             background: rgba(196, 196, 196, 0.4);
             box-sizing: border-box;
-            @media screen and (max-width: $phone_width) {
+            @media (max-width: $phone_width) {
                     width: 100%;
                     margin: 5px 0 ;
 
@@ -412,7 +412,7 @@ body {
             box-sizing: border-box;
 
             resize: none;
-            @media screen and (max-width: $phone_width) {
+            @media(max-width: $phone_width) {
                 width: 100%;
                 margin: 10px 0 ;
 
@@ -497,7 +497,7 @@ footer {
                     height: clamp(50px, 5vw, 100px);
                     align-self: center;
                 }
-                @media screen and (max-width: $phone_width) {
+                @media(max-width: $phone_width) {
                     display: grid;
                     grid-template-columns: auto auto;
                     
@@ -603,7 +603,7 @@ footer {
                 margin: 33px 0px 29px 33px;
             }
         }
-        @media screen and (max-width: $tablet_width) {
+        @media(max-width: $tablet_width) {
                 grid-template-rows: auto;
                 grid-template-columns: auto auto;
                 
@@ -642,7 +642,7 @@ footer {
                 
             }
         }
-        @media screen and (max-width: $phone_width) {
+        @media(max-width: $phone_width) {
                 display: grid; 
              
                 grid-template-rows: auto auto;
@@ -686,7 +686,7 @@ footer {
         align-items: flex-end;
         box-sizing: border-box;
         color: #ffffff;
-        @media screen and (max-width: $phone_width) {
+        @media(max-width: $phone_width) {
             display: block;
 
             font-family: 'Montserrat';
@@ -756,5 +756,14 @@ footer {
 .removeForPhone {
     @media (max-width: $phone_width) {
         display: none;
+    }
+}
+
+.buttonEffects{
+    :hover{
+        background-color: #FFDA16;
+    }
+    :hover{
+        background-color: #FF8A00;
     }
 }
