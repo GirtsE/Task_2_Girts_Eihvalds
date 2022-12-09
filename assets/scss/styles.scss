@@ -179,7 +179,6 @@ body {
         align-items: center;
         object-fit: cover;
         
-        background-color: #69C65F; 
         grid-row-start: 1;
         grid-column-start: 1;
      
@@ -192,7 +191,6 @@ body {
         width: 100%;
         align-items: center;
      
-        background-color: #565BBB; 
         grid-row-start: 1;
         grid-column-start: 2;
      
@@ -212,8 +210,7 @@ body {
         }
         margin: auto;
         width: 100%;
-
-        background-color: #7956EE; 
+ 
         grid-row-start: 1;
         grid-column-start: 3;
      
@@ -226,7 +223,6 @@ body {
         object-fit: cover;
         margin: auto;
      
-        background-color: #95BDED; 
         grid-row-start: 1;
         grid-column-start: 4;
      
@@ -429,7 +425,6 @@ body {
             padding-top: 15px;
             width: 100%;
             height: 50px;
-            background-color: aqua;
 
             input {
                 display: inline;
@@ -760,10 +755,13 @@ footer {
 }
 
 .buttonEffects{
-    :hover{
-        background-color: #FFDA16;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #FFDA16 !important;
     }
-    :hover{
-        background-color: #FF8A00;
+    &:active{
+        cursor: pointer;
+        background-color: #FF8A00 !important;
     }
 }
